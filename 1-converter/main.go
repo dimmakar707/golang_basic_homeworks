@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func main() {
-	const USDToEUR float64 = 0.8941
-	const USDToRUB float64 = 82.14
-	const EURToRUB = USDToRUB / USDToEUR
+const USDToEUR float64 = 0.8941
+const USDToRUB float64 = 82.14
+const EURToRUB = USDToRUB / USDToEUR
 
+func main() {
 	sum, currencyFrom, currencyTo := getUserInput()
 
 	result := calculateResult(sum, currencyFrom, currencyTo)
